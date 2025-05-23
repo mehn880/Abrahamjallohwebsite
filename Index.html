@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+      <!--HOME NAVIGATION-->
+        <nav>
+          <h1 class="logo">My Portfolio</h1>
+          <ul class="nav-links">
+            <li><a href="jallorh.html">Home</a></li>
+            <li><a href="Aboutpage.html">About</a></li>
+            <li><a href="Contactpage.html">Form</a></li>
+            <li><a href="My CV.html">CV</a></li>
+          </ul>
+        </nav>
+      </header>
+
+       <!---PROFILE PHOTO, & CLICK QUOTATION ---->
+      <main class="home">
+        <section class="profile">
+          <img src="Jallorh.jpg" alt="My Photo" class="profile-pic" id="openModal">
+        
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close-button" id="closeModal">&times;</span>
+              <h2>Self Tip:</h2>
+              <p>Welcome, I'm Abraham Jalloh a pratized Web Developer from Srarz University.
+              I'm a young passionate web developer with experience in building responsive and dynamic websites.
+               I love turning ideas into reality through code.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro">
+        </section>
+        <section class="projects">
+          <h3>My Inspiration.</h3>
+          <div class="grid">
+
+            <div class="project-card">
+              <p>As a participant of the Orange Digital Center (ODC) code challege 2010, 
+                I lead a team of twelve couragious (12) team mates of which seven (7) were boys & six (6) girls. <br>
+                After winning the the code challege 2010, I superviced the team and we build 
+                the Orange Money System as part of our controbution as the winning .</p>
+            </div>
+
+            <div class="project-card">
+              <p>Work at a collaborator as teach eathusia and initialized projects with in and for so many teach institutions with in all Liberia.
+              As a pratilized coder, my coding ability extend beyon just opending code editor and runding codes, but help others understand to code 
+               context to have more Liberian involve.</p>
+            </div>
+
+            <div class="project-card">
+              <p>As part of my involvements, each day I manage to add knowledges to grow at a new levels.
+                I have grow to a new level by growing new each day. To gets more of coding knowledge each day learn new ideas.</p>
+            </div>
+
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Please follow me: 
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </p>
+        <p>&copy; Mr.Jalloh Portfolio-2025</p>
+      </footer>
+   
+
+    <!--This SCRIPT shows the pop-up medal after clicking my photo-->
+    <script>
+      const openModal = document.getElementById("openModal");
+      const closeModal = document.getElementById("closeModal");
+      const modal = document.getElementById("myModal");
+    
+      openModal.onclick = function () {
+        modal.style.display = "block";
+      };
+    
+      closeModal.onclick = function () {
+        modal.style.display = "none";
+      };
+    
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    
+     
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Contactpage</title>
+</head>
+<body>
+    <a href="Index.html" class="home-back">Home</a>
+
+    <section class="contact-section">
+        <h2>Contact Mr.Jalloh</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required/>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required/>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+      
+          <!--pop-up Modal for my button -->
+          <button type="button" onclick="document.getElementById('confirm-modal').style.display='flex'">Submit</button>
+        </form>
+      </section>
+      
+      <!-- Modal -->
+      <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+          <p>Are you sure you want to submit the form?</p>
+          <div class="modal-buttons">
+            <button onclick="document.getElementById('contact-form').submit()">Yes</button>
+            <button onclick="document.getElementById('confirm-modal').style.display='none'">Cancel</button>
+          </div>
+        </div>
+      </div>
+      
+
+</body>
+</html>
